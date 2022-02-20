@@ -21,8 +21,11 @@ Route::get('/welcome',[App\Http\Controllers\userNoAuthController::class, 'index'
 
 
 Route::middleware(['auth'])->get('/user/dashboard', [App\Http\Controllers\UserDashboardControllerController::class, 'index'])->name('dashboard');
+
+
 Route::middleware(['auth'])->get('/user/dashboard/view', [App\Http\Controllers\UserDashboardControllerController::class, 'view'])->name('view');
 
+Route::resource('user/bid', '\App\Http\Controllers\BidController');
 
 
 
