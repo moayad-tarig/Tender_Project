@@ -21,11 +21,13 @@
   
 
     <li class="nav-item mt-2">
-      <a class="nav-link" href="{{ route('logout') }}" data-toggle="modal" data-target="#logoutModal">
-        <i class="fas fa-fw fa-chart-area"></i>
-        <span>LOGOUT</span></a>
-    </li>
+      <form action="{{ route('logout') }}" method="Post">
+        @csrf
+        <button class="nav-link text-light btn btn-danger text-center"  type="submit">تسجيل الخروج</button>
 
+    </form>
+      
+    </li>
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

@@ -60,7 +60,7 @@
                 <!--top nav end here-->
                 <!--title start here-->
                 <div class="title-main">
-                    <a href="index.html">
+                    <a href="{{ url('/') }}">
                         <h1>Tender Management System</h1>
                     </a>
                 </div>
@@ -70,10 +70,10 @@
                     <div class="navg">
                         <span class="menu"> <img src="images/icon.png" alt=""></span>
                         <ul class="res">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="tenders.php">Tenders</a></li>
-                            <li><a href="signup.php">Register</a></li>
-                            <li><a class="active" href="login.php">Login</a></li>
+                            <li><a href="{{ url('/') }}">Home</a></li>
+                            <li><a class="active" href="{{ url('/welcome') }}">Tenders</a></li>
+                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
                         </ul>
                         <script>
                             $("span.menu").click(function() {

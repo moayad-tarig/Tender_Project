@@ -60,7 +60,7 @@
                 <!--top nav end here-->
                 <!--title start here-->
                 <div class="title-main">
-                    <a href="index.html">
+                    <a href="{{ url('/') }}">
                         <h1>Tender Management System</h1>
                     </a>
                 </div>
